@@ -2,7 +2,7 @@
 
 一場關於「大外食時代如何普及環保餐具」的互動式數位展覽，以 SDG 12 為主軸，連結 SDG 4 的永續生活教育與 SDG 3 的衛生安心。
 
-> GitHub Pages 網址會在首次成功部署後補上。
+> 線上展覽：[https://chiehyunwww.github.io/sdgs-interactive-curation/](https://chiehyunwww.github.io/sdgs-interactive-curation/)
 
 ## 開始使用
 
