@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './style.css';
+import { initStoreFinder } from './store-finder.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +29,7 @@ if (!reducedMotion) {
   intro.from('.hero-meta', { y: 14, autoAlpha: 0, duration: 0.7 });
   intro.from('.hero-copy .eyebrow', { y: 20, autoAlpha: 0, duration: 0.55 }, '-=0.32');
   intro.from('.hero h1', { y: 46, autoAlpha: 0, duration: 0.85 }, '-=0.24');
-  intro.from('.hero-intro, .round-link', { y: 18, autoAlpha: 0, duration: 0.6, stagger: 0.12 }, '-=0.42');
+  intro.from('.hero-intro, .hero-store-link, .round-link', { y: 18, autoAlpha: 0, duration: 0.6, stagger: 0.12 }, '-=0.42');
   intro.from('.hero-art', { scale: 0.94, rotate: 2, autoAlpha: 0, duration: 1.05 }, '-=0.95');
   intro.from('.art-sticker', { scale: 0.3, rotate: -24, autoAlpha: 0, duration: 0.55, ease: 'back.out(1.7)' }, '-=0.35');
 
@@ -213,3 +214,5 @@ window.addEventListener('message', (event) => {
   activeNonce = '';
   feedbackForm.querySelector('.submit-button').disabled = false;
 });
+
+initStoreFinder({ gsap, ScrollTrigger, reducedMotion });
